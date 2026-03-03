@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Project } from "@/lib/types";
 import { SkillBadge } from "./SkillBadge";
+import { useTheme } from "next-themes";
 
 export function ProjectCard({
   project,
@@ -11,6 +12,8 @@ export function ProjectCard({
   project: Project;
 }) {
   const isFeatured = Boolean(project.featured);
+  const { resolvedTheme } = useTheme();
+  const numOpacity = resolvedTheme === "dark" ? 0.08 : 0.05;
   return (
     <motion.article
       whileHover={{ y: -4 }}
@@ -23,44 +26,54 @@ export function ProjectCard({
         <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent2/10" />
       </div>
 
-      <div className="pointer-events-none absolute right-4 top-4 select-none font-display text-5xl font-extrabold tracking-[-0.06em] text-accent/15">
-        {project.number}
-      </div>
-
       <div
         className={`relative z-10 ${
           isFeatured ? "grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch" : ""
         }`}
       >
-        <div>
-          <div className="flex flex-wrap gap-2">
-            {project.tags.map((t) => (
-              <SkillBadge key={t}>{t}</SkillBadge>
-            ))}
+        <div className="relative">
+          <div
+            className="pointer-events-none select-none absolute right-0 top-0 font-display font-extrabold tracking-[-0.06em]"
+            style={{
+              fontSize: "clamp(64px, 8vw, 96px)",
+              lineHeight: 1,
+              opacity: numOpacity,
+              color: "var(--text)",
+              zIndex: 0,
+            }}
+          >
+            {project.number}
           </div>
+          <div className="relative z-10">
+            <div className="flex flex-wrap gap-2">
+              {project.tags.map((t) => (
+                <SkillBadge key={t}>{t}</SkillBadge>
+              ))}
+            </div>
 
-          <h3 className="mt-5 font-display text-2xl font-bold tracking-[-0.04em] text-text">
-            {project.title}
-          </h3>
+            <h3 className="mt-5 font-display text-2xl font-bold tracking-[-0.04em] text-text">
+              {project.title}
+            </h3>
 
-          <p className="mt-3 max-w-prose text-[14px] leading-7 text-muted">
-            {project.description}
-          </p>
+            <p className="mt-3 max-w-prose text-[14px] leading-7 text-muted">
+              {project.description}
+            </p>
 
-          <div className="mt-5 flex flex-wrap items-center gap-3">
-            {project.links.map((l) => (
-              <Link
-                key={l.label}
-                href={l.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xs border border-border bg-bg/30 px-3 py-2 font-mono text-[12px] uppercase tracking-[0.22em] text-text/90 transition-colors hover:border-accent/60 hover:text-accent"
-                aria-label={`${l.label} — ${project.title}`}
-              >
-                {l.label}
-                <span aria-hidden>↗</span>
-              </Link>
-            ))}
+            <div className="mt-5 flex flex-wrap items-center gap-3">
+              {project.links.map((l) => (
+                <Link
+                  key={l.label}
+                  href={l.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xs border border-border bg-bg/30 px-3 py-2 font-mono text-[12px] uppercase tracking-[0.22em] text-text/90 transition-colors hover:border-accent/60 hover:text-accent"
+                  aria-label={`${l.label} — ${project.title}`}
+                >
+                  {l.label}
+                  <span aria-hidden>↗</span>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
