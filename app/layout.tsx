@@ -40,6 +40,14 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Abass Ibrahim (Ghost) — IT Support Specialist, Full-Stack Developer, UI/UX Designer, and Web3 Builder based in Lagos, Nigeria.",
     type: "website",
+    images: ["/images/abass.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Abass Ibrahim — Ghost | IT Specialist & Full-Stack Developer",
+    description:
+      "Portfolio of Abass Ibrahim (Ghost) — IT Support Specialist, Full-Stack Developer, UI/UX Designer, and Web3 Builder based in Lagos, Nigeria.",
+    images: ["/images/abass.png"],
   },
 };
 
@@ -56,6 +64,12 @@ export default function RootLayout({
       <body
         className={`${syne.variable} ${dmMono.variable} ${instrumentSerif.variable} antialiased`}
       >
+        <a
+          href="#main"
+          className="fixed left-4 top-3 z-[100] -translate-y-20 rounded-xs bg-accent px-3 py-2 font-mono text-[12px] uppercase tracking-[0.22em] text-bg transition-transform focus:translate-y-0"
+        >
+          Skip to content
+        </a>
         <Cursor />
         {children}
       </body>

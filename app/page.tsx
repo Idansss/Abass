@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <div className="min-h-dvh bg-bg text-text">
       <Navbar />
-      <main>
+      <main id="main" role="main">
         <Hero />
         <Marquee />
         <About />

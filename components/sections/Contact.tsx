@@ -13,6 +13,7 @@ export function Contact() {
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
   const [sent, setSent] = React.useState(false);
+   const [copied, setCopied] = React.useState(false);
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -130,13 +131,31 @@ export function Contact() {
                 Direct Email
               </div>
               <div className="mt-3">
-                <Link
-                  href={`mailto:${EMAIL}`}
-                  className="font-mono text-[12px] uppercase tracking-[0.22em] text-muted hover:text-accent"
-                  aria-label="Send an email"
-                >
-                  {EMAIL}
-                </Link>
+                <div className="flex flex-wrap items-center gap-3">
+                  <Link
+                    href={`mailto:${EMAIL}`}
+                    className="font-mono text-[12px] uppercase tracking-[0.22em] text-muted hover:text-accent"
+                    aria-label="Send an email"
+                  >
+                    {EMAIL}
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={async () => {
+                      try {
+                        await navigator.clipboard.writeText(EMAIL);
+                        setCopied(true);
+                        window.setTimeout(() => setCopied(false), 2000);
+                      } catch {
+                        setCopied(false);
+                      }
+                    }}
+                    className="rounded-xs border border-border bg-surface px-3 py-1 font-mono text-[10px] uppercase tracking-[0.22em] text-muted transition-colors hover:border-accent hover:text-accent"
+                    aria-label="Copy email address"
+                  >
+                    {copied ? "Copied" : "Copy"}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
