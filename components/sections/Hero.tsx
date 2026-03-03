@@ -167,7 +167,7 @@ export function Hero() {
 
             <div className="mt-6 grid grid-cols-2 gap-3">
               {[
-                { k: "2 Years", v: "Experience" },
+                { k: "2+ Years", v: "Experience" },
                 { k: "15+ Stack", v: "Tools & Tech" },
                 { k: "5+ Domains", v: "Roles" },
                 { k: "∞ Drive", v: "Always Learning" },
