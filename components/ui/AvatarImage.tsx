@@ -13,16 +13,16 @@ export function AvatarImage() {
           width: "80px",
           height: "80px",
           borderRadius: "50%",
-          background: "linear-gradient(135deg, #c8f04a, #4af0c8)",
+          background: "linear-gradient(135deg, var(--accent), var(--accent2))",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           fontFamily: "var(--font-syne), sans-serif",
           fontWeight: 800,
           fontSize: "24px",
-          color: "#0a0a0a",
+          color: "var(--accent-text)",
           flexShrink: 0,
-          border: "2px solid #c8f04a",
+          border: "2px solid var(--accent)",
         }}
         aria-hidden
       >
@@ -38,7 +38,7 @@ export function AvatarImage() {
         height: "80px",
         borderRadius: "50%",
         overflow: "hidden",
-        border: "2px solid #c8f04a",
+        border: "2px solid var(--accent)",
         flexShrink: 0,
         position: "relative",
       }}

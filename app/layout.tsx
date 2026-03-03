@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { DM_Mono, Instrument_Serif, Syne } from "next/font/google";
 import "./globals.css";
 
+import { ThemeProvider } from "next-themes";
 import { Cursor } from "@/components/ui/Cursor";
 
 const syne = Syne({
@@ -60,18 +61,25 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body
         className={`${syne.variable} ${dmMono.variable} ${instrumentSerif.variable} antialiased`}
       >
-        <a
-          href="#main"
-          className="fixed left-4 top-3 z-[100] -translate-y-20 rounded-xs bg-accent px-3 py-2 font-mono text-[12px] uppercase tracking-[0.22em] text-bg transition-transform focus:translate-y-0"
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          storageKey="ghost-theme"
         >
-          Skip to content
-        </a>
-        <Cursor />
-        {children}
+          <a
+            href="#main"
+            className="fixed left-4 top-3 z-[100] -translate-y-20 rounded-xs bg-accent px-3 py-2 font-mono text-[12px] uppercase tracking-[0.22em] text-bg transition-transform focus:translate-y-0"
+          >
+            Skip to content
+          </a>
+          <Cursor />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

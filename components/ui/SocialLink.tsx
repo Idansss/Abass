@@ -119,8 +119,8 @@ export function SocialLink({
             style={{
               width: "40px",
               height: "40px",
-              background: "#0a0a0a",
-              border: `1px solid ${hovered ? brandColor : "#1e1e1e"}`,
+              background: "var(--bg)",
+              border: `1px solid ${hovered ? brandColor : "var(--border)"}`,
               borderRadius: "4px",
               display: "flex",
               alignItems: "center",

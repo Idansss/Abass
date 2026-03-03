@@ -37,7 +37,7 @@ function WritingLogo({ id }: { id: string }) {
     );
   }
 
-  if (id === "github-writing") {
+  if (id === "github") {
     return (
       <span className="mr-2 inline-flex h-7 w-7 items-center justify-center rounded-xs border border-border bg-bg/40">
         <svg

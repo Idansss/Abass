@@ -8,6 +8,7 @@ import {
   useScroll,
 } from "framer-motion";
 import { GhostLogo } from "@/components/ui/GhostLogo";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -66,7 +67,10 @@ export function Navbar() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
+            <div className="hidden md:flex">
+              <ThemeToggle />
+            </div>
             <a
               href="#contact"
               onClick={(e) => {
@@ -144,6 +148,9 @@ export function Navbar() {
                 >
                   Hire Me
                 </a>
+                <div className="mt-4 flex">
+                  <ThemeToggle />
+                </div>
               </div>
             </div>
           </motion.div>

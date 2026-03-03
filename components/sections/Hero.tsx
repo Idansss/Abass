@@ -42,7 +42,7 @@ export function Hero() {
         className="pointer-events-none absolute -right-24 top-10 h-[480px] w-[480px] rounded-full"
         style={{
           background:
-            "radial-gradient(circle at 30% 30%, rgba(200,240,74,0.26), transparent 55%), radial-gradient(circle at 70% 70%, rgba(74,240,200,0.18), transparent 55%)",
+            "radial-gradient(circle at 30% 30%, var(--orb-color), transparent 55%), radial-gradient(circle at 70% 70%, color-mix(in srgb, var(--accent2) 18%, transparent), transparent 55%)",
           filter: "blur(10px)",
         }}
         animate={{ y: [0, -30, 0] }}
