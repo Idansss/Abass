@@ -12,7 +12,7 @@ import { socials } from "@/lib/data";
 //   2. Create a new form — set the email to abassibrahim591@gmail.com
 //   3. Copy the form ID from the dashboard (looks like "xpzgvqkr")
 //   4. Replace YOUR_FORMSPREE_ID below with that ID
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORMSPREE_ID";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mykoyrna";
 
 const EMAIL = "abassibrahim591@gmail.com";
 
