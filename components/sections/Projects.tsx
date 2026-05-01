@@ -3,8 +3,7 @@ import { ProjectCard } from "@/components/ui/ProjectCard";
 import { projects } from "@/lib/data";
 
 export function Projects() {
-  const [first, ...rest] = projects;
-  const remaining = rest.slice(0, 3);
+  const [first, ...remaining] = projects;
 
   return (
     <section id="projects" className="section-y border-t border-border/60">

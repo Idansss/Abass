@@ -16,7 +16,8 @@ const infoCards = [
   { icon: "🎓", label: "Education", value: "University of Ilorin, Nigeria" },
   { icon: "📍", label: "Location", value: "Lagos State, Nigeria" },
   { icon: "🧭", label: "Primary Role", value: "IT Support Specialist (Oil & Gas)" },
-  { icon: "✉️", label: "Email", value: "jesselingard990@gmail.com", href: "mailto:jesselingard990@gmail.com" },
+  { icon: "🌐", label: "Availability", value: "Open to remote roles globally" },
+  { icon: "✉️", label: "Email", value: "abassibrahim591@gmail.com", href: "mailto:abassibrahim591@gmail.com" },
   { icon: "↗", label: "GitHub", value: "github.com/Lingz450", href: "https://github.com/Lingz450" },
 ];
 

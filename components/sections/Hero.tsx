@@ -122,6 +122,13 @@ export function Hero() {
             >
               Get in Touch
             </a>
+            <a
+              href="/Abass_Ibrahim_CV.pdf"
+              download
+              className="inline-flex items-center justify-center rounded-xs border border-border bg-transparent px-5 py-3 font-mono text-[12px] uppercase tracking-[0.22em] text-text transition-transform hover:-translate-y-1 hover:border-accent/60 hover:text-accent"
+            >
+              Download CV
+            </a>
           </motion.div>
 
           <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
@@ -167,9 +174,9 @@ export function Hero() {
 
             <div className="mt-6 grid grid-cols-2 gap-3">
               {[
-                { k: "2+ Years", v: "Experience" },
-                { k: "15+ Stack", v: "Tools & Tech" },
-                { k: "5+ Domains", v: "Roles" },
+                { k: "3+ Years", v: "Experience" },
+                { k: "20+ Stack", v: "Tools & Tech" },
+                { k: "6+ Domains", v: "Roles" },
                 { k: "∞ Drive", v: "Always Learning" },
               ].map((s) => (
                 <div

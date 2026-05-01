@@ -77,40 +77,57 @@ export const projects: Project[] = [
   {
     number: "01",
     featured: true,
-    title: "Operations Hub — Full‑Stack Workflow Platform",
+    title: "The Thesis Desk — Crypto Trading Command Center",
     description:
-      "A production-ready web app built for high-pressure operations: role-based access, audit-friendly activity feeds, and a clean workflow for creating, reviewing, and shipping requests. I designed the UI system first, then implemented a fast React client with a Node.js API, PostgreSQL data modeling, and Prisma migrations for dependable deployments.",
-    tags: ["React", "Node.js", "PostgreSQL", "Prisma", "REST APIs"],
+      "A full-stack trading command center built for the 500+ member crypto community I run. Features live price feeds for BTC, ETH, SOL, BNB, and XRP, P&L tracking, signal review, daily journaling with streak accountability, weekly discipline scoring, and a calculator suite. Includes role-based access with an admin panel and a focused 'Today's Trade Plan' workflow that turns the journal into sharper execution.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Real-Time Data", "SaaS"],
     links: [
-      { label: "GitHub", href: "https://github.com/Lingz450" },
-      { label: "Live Demo", href: "https://github.com/Lingz450" },
+      { label: "GitHub", href: "https://github.com/Idansss/Ghost-Trading-Academy" },
+      { label: "Live Demo", href: "https://thethesisdesk.xyz/" },
     ],
   },
   {
     number: "02",
-    title: "Editorial UI Kit — Figma Design System",
+    title: "The Helping Tribe Academy — School Management Platform",
     description:
-      "A token-driven design system built in Figma with a strict grid, typography scales, reusable components, and interactive prototypes. It supports dark-first editorial layouts, accessible contrast targets, and documentation pages that make handoff to developers clean and predictable.",
-    tags: ["Figma", "Design Tokens", "Components", "Prototyping"],
-    links: [{ label: "GitHub", href: "https://github.com/Lingz450" }],
+      "A complete school management system for a Counselling & Positive Psychology program. Three role-based login portals (Student, Facilitator, Admin) with separate matric-number and email authentication flows, plus a public application form for prospective students. Designed for clarity and speed, with distinct UX paths per role.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Multi-Role Auth", "Full-Stack"],
+    links: [
+      { label: "GitHub", href: "https://github.com/Idansss/Helping-Tribe" },
+      { label: "Live Demo", href: "https://helpingtribeacademy.com/" },
+    ],
   },
   {
     number: "03",
-    title: "On‑Chain Bot Suite — Web3 Automation",
+    title: "Wearables Atelier — Premium Nigerian Womenswear E-Commerce",
     description:
-      "A set of Web3 scripts and bot utilities for monitoring contracts, reacting to events, and executing safe automated actions with guardrails. Built with clear configuration, retry logic, and status reporting — designed to be understandable, maintainable, and resilient under real-world network conditions.",
-    tags: ["JavaScript", "Web3.js", "Automation", "Bots"],
-    links: [{ label: "GitHub", href: "https://github.com/Lingz450" }],
+      "An editorial e-commerce site for a premium Nigerian womenswear brand — Iro & Buba, Aso Oke, Kaftan, Boubou, Turbans, and Jewellery. Multi-category navigation, ready-to-wear and custom-order flows, wholesale support, sale management, and a 'Now Trending' module with live product pricing. Built mobile-first with a strong magazine-style design language.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "E-Commerce", "Editorial UI"],
+    links: [
+      { label: "GitHub", href: "https://github.com/Idansss/Wearables-Atelier" },
+      { label: "Live Demo", href: "https://wearables-atelier.vercel.app/" },
+    ],
   },
   {
     number: "04",
-    title: "Pulse Admin — SaaS Dashboard",
+    title: "Fàdè (9thluxe) — Luxury Perfume E-Commerce",
     description:
-      "A polished dashboard experience with authentication, realtime updates, and a component library designed for speed. Built with Next.js and Tailwind for snappy UX, backed by Supabase for auth and realtime data. Focused on clarity: actionable views, clean states, and sharp interaction details.",
-    tags: ["Next.js", "Supabase", "Tailwind", "TypeScript", "Realtime"],
+      "A luxury perfume storefront with curated collections, drops, an editorial journal, persistent cart, wishlist, and full dark/light mode. Designed mobile-first with a slow-luxury feel — clean typography, generous whitespace, and a calm interaction model. Built end-to-end with Next.js, TypeScript, and Tailwind.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Shadcn UI", "E-Commerce"],
     links: [
-      { label: "GitHub", href: "https://github.com/Lingz450" },
-      { label: "Live Demo", href: "https://github.com/Lingz450" },
+      { label: "GitHub", href: "https://github.com/Idansss/9thluxe-store" },
+      { label: "Live Demo", href: "https://9thluxe-store-two.vercel.app/" },
+    ],
+  },
+  {
+    number: "05",
+    title: "Aureo — Trust-First Hiring Marketplace",
+    description:
+      "A hiring marketplace where candidates build verified profiles with trust scores and skill listings, while employers post transparent opportunities. Built around the idea that hiring should reward proof and clear communication, not noise.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Marketplace", "Auth"],
+    links: [
+      { label: "GitHub", href: "https://github.com/Idansss/Aureo" },
+      { label: "Live Demo", href: "https://aureeo.netlify.app/" },
     ],
   },
 ];
