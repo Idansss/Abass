@@ -5,7 +5,6 @@ import { SkillBadge } from "@/components/ui/SkillBadge";
 const tags = [
   "IT Support (Oil & Gas)",
   "Full‑Stack Dev",
-  "UI/UX Designer",
   "Web3",
   "Bot Creator",
   "Technical Writer",

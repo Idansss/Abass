@@ -8,7 +8,6 @@ import { AvatarImage } from "@/components/ui/AvatarImage";
 const roles = [
   "IT Support Specialist (Oil & Gas)",
   "Full‑Stack Developer",
-  "UI/UX Designer (Figma)",
   "Web3 Builder",
   "Technical Writer",
 ];
