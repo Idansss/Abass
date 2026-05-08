@@ -141,7 +141,7 @@ export function Hero() {
               GitHub ↗
             </Link>
             <Link
-              href="https://www.linkedin.com/in/abass-ibrahim-6a5795194/"
+              href="https://www.linkedin.com/in/abass-ibrahim-devv"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-[12px] uppercase tracking-[0.22em] text-muted hover:text-accent"

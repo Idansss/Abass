@@ -11,9 +11,8 @@ export const socials: Social[] = [
     id: "linkedin",
     label: "LinkedIn",
     short: "LI",
-    href: "https://www.linkedin.com/in/abass-ibrahim-6a5795194/",
+    href: "https://www.linkedin.com/in/abass-ibrahim-devv",
   },
-  { id: "x", label: "X", short: "X", href: "https://x.com/Ghost912932" },
   {
     id: "hashnode",
     label: "Hashnode",
