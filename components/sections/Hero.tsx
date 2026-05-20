@@ -162,7 +162,7 @@ export function Hero() {
                   Abass Ibrahim
                 </div>
                 <div className="font-mono text-[12px] uppercase tracking-[0.22em] text-muted">
-                  Lagos State, Nigeria <span aria-hidden>ðŸ“</span>
+                  Lagos State, Nigeria
                 </div>
               </div>
             </div>
@@ -205,5 +205,6 @@ export function Hero() {
     </section>
   );
 }
+
 
 
