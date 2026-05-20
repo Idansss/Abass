@@ -70,7 +70,7 @@ export function Writing() {
         <RevealOnScroll>
           <div className="accent-line label">Writing</div>
           <h2 className="mt-6 font-display text-4xl font-extrabold tracking-[-0.06em] text-text sm:text-5xl">
-            Words from the Ghost.
+            Words from the builder.
           </h2>
           <p className="mt-4 max-w-2xl text-[15px] leading-8 text-muted">
             I write to clarify thinking — patterns, breakdowns, and practical lessons from building

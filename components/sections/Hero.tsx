@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -7,7 +7,7 @@ import { AvatarImage } from "@/components/ui/AvatarImage";
 
 const roles = [
   "IT Support Specialist (Oil & Gas)",
-  "Full‑Stack Developer",
+  "Fullâ€‘Stack Developer",
   "Web3 Builder",
   "Technical Writer",
 ];
@@ -73,10 +73,6 @@ export function Hero() {
             <AnimatedText text="Abass" as="span" mode="chars" />
             <br />
             <AnimatedText text="Ibrahim" as="span" mode="chars" delay={0.08} />
-            <br />
-            <span className="font-serifItalic italic text-accent">
-              <AnimatedText text="Ghost" as="span" mode="chars" delay={0.16} />
-            </span>
           </motion.h1>
 
           <motion.div variants={item} className="mt-6 flex flex-wrap gap-x-4 gap-y-2">
@@ -95,9 +91,9 @@ export function Hero() {
           </motion.div>
 
           <motion.p variants={item} className="mt-6 max-w-xl text-[15px] leading-8 text-muted">
-            I’m Abass Ibrahim — known online as <span className="text-text">Ghost</span>. I build
-            sharp, reliable web experiences and support real-world systems where uptime, clarity,
-            and calm execution matter. Dark UI, clean code, and shipped outcomes.
+            I'm Abass Ibrahim. I build sharp, reliable web experiences and support real-world
+            systems where uptime, clarity, and calm execution matter. Dark UI, clean code, and
+            shipped outcomes.
           </motion.p>
 
           <motion.div variants={item} className="mt-8 flex flex-wrap gap-3">
@@ -138,7 +134,7 @@ export function Hero() {
               className="font-mono text-[12px] uppercase tracking-[0.22em] text-muted hover:text-accent"
               aria-label="Visit GitHub profile"
             >
-              GitHub ↗
+              GitHub â†—
             </Link>
             <Link
               href="https://www.linkedin.com/in/abass-ibrahim-devv"
@@ -147,7 +143,7 @@ export function Hero() {
               className="font-mono text-[12px] uppercase tracking-[0.22em] text-muted hover:text-accent"
               aria-label="Visit LinkedIn profile"
             >
-              LinkedIn ↗
+              LinkedIn â†—
             </Link>
           </motion.div>
         </motion.div>
@@ -166,7 +162,7 @@ export function Hero() {
                   Abass Ibrahim
                 </div>
                 <div className="font-mono text-[12px] uppercase tracking-[0.22em] text-muted">
-                  Lagos State, Nigeria <span aria-hidden>📍</span>
+                  Lagos State, Nigeria <span aria-hidden>ðŸ“</span>
                 </div>
               </div>
             </div>
@@ -176,7 +172,7 @@ export function Hero() {
                 { k: "3+ Years", v: "Experience" },
                 { k: "20+ Stack", v: "Tools & Tech" },
                 { k: "6+ Domains", v: "Roles" },
-                { k: "∞ Drive", v: "Always Learning" },
+                { k: "âˆž Drive", v: "Always Learning" },
               ].map((s) => (
                 <div
                   key={s.k}
@@ -209,4 +205,5 @@ export function Hero() {
     </section>
   );
 }
+
 

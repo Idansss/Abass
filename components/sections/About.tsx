@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { SkillBadge } from "@/components/ui/SkillBadge";
 
@@ -28,7 +28,7 @@ export function About() {
           <div>
             <div className="accent-line label">About Me</div>
             <h2 className="mt-6 font-display text-4xl font-extrabold tracking-[-0.06em] text-text sm:text-5xl">
-              The Ghost{" "}
+              The mind{" "}
               <span className="font-serifItalic italic text-text/90">
                 behind the code.
               </span>
@@ -36,14 +36,14 @@ export function About() {
 
             <div className="mt-7 space-y-5 text-[15px] leading-8 text-muted">
               <p>
-                I’m Abass Ibrahim — Ghost online — based in Lagos State, Nigeria. My work lives at
+                I&apos;m Abass Ibrahim, based in Lagos State, Nigeria. My work lives at
                 the intersection of clean interface design, dependable engineering, and calm
                 problem-solving under real-world constraints. I enjoy building products that feel
                 sharp, intentional, and fast — the kind of UI that earns trust in the first few
                 seconds.
               </p>
               <p>
-                Professionally, I work as an IT Support Specialist in the Oil &amp; Gas sector, so I’m
+                Professionally, I work as an IT Support Specialist in the Oil &amp; Gas sector, so I&apos;m
                 wired for uptime, clarity, and systems thinking. That background shapes how I
                 approach software: consistent patterns, strong defaults, readable flows, and the
                 discipline to ship features without breaking what already works.
@@ -108,4 +108,3 @@ export function About() {
     </section>
   );
 }
-

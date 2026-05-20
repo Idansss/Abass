@@ -25,29 +25,28 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Abass Ibrahim — Ghost | IT Specialist & Full-Stack Developer",
+  title: "Abass Ibrahim | IT Specialist & Full-Stack Developer",
   description:
-    "Portfolio of Abass Ibrahim (Ghost) — IT Support Specialist, Full-Stack Developer, UI/UX Designer, and Web3 Builder based in Lagos, Nigeria.",
+    "Portfolio of Abass Ibrahim — IT Support Specialist, Full-Stack Developer, UI/UX Designer, and Web3 Builder based in Lagos, Nigeria.",
   keywords: [
     "Abass Ibrahim",
-    "Ghost",
     "Lagos developer",
     "Nigeria web developer",
     "IT Support Oil Gas",
     "Full-Stack React Next.js",
   ],
   openGraph: {
-    title: "Abass Ibrahim — Ghost | IT Specialist & Full-Stack Developer",
+    title: "Abass Ibrahim | IT Specialist & Full-Stack Developer",
     description:
-      "Portfolio of Abass Ibrahim (Ghost) — IT Support Specialist, Full-Stack Developer, UI/UX Designer, and Web3 Builder based in Lagos, Nigeria.",
+      "Portfolio of Abass Ibrahim — IT Support Specialist, Full-Stack Developer, UI/UX Designer, and Web3 Builder based in Lagos, Nigeria.",
     type: "website",
     images: ["/images/abass.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Abass Ibrahim — Ghost | IT Specialist & Full-Stack Developer",
+    title: "Abass Ibrahim | IT Specialist & Full-Stack Developer",
     description:
-      "Portfolio of Abass Ibrahim (Ghost) — IT Support Specialist, Full-Stack Developer, UI/UX Designer, and Web3 Builder based in Lagos, Nigeria.",
+      "Portfolio of Abass Ibrahim — IT Support Specialist, Full-Stack Developer, UI/UX Designer, and Web3 Builder based in Lagos, Nigeria.",
     images: ["/images/abass.png"],
   },
 };
@@ -69,7 +68,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
-          storageKey="ghost-theme"
+          storageKey="abass-theme"
         >
           <a
             href="#main"

@@ -23,7 +23,7 @@ export function GhostLogo({
   const mergedClass = className ? `${baseClass} ${className}` : baseClass;
 
   return (
-    <a href="/" className={mergedClass} aria-label="Ghost — home">
+    <a href="/" className={mergedClass} aria-label="Abass Ibrahim — home">
       {/* Left flourish SVG (mirrored) */}
       <svg
         width={svgWidth}
@@ -78,11 +78,10 @@ export function GhostLogo({
         <circle cx="26" cy="22" r="1" fill="currentColor" opacity="0.5" />
       </svg>
 
-      {/* The word Ghost */}
       <span
         className={`font-serifItalic italic font-normal leading-none tracking-tight text-accent ${fontClass}`}
       >
-        Ghost
+        Abass
       </span>
 
       {/* Right flourish SVG */}

@@ -45,7 +45,7 @@ export function AvatarImage() {
     >
       <Image
         src="/images/abass.png"
-        alt="Abass Ibrahim — Ghost"
+        alt="Abass Ibrahim"
         fill
         sizes="80px"
         style={{ objectFit: "cover", objectPosition: "center top" }}
