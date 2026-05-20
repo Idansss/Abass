@@ -7,7 +7,7 @@ import { AvatarImage } from "@/components/ui/AvatarImage";
 
 const roles = [
   "IT Support Specialist (Oil & Gas)",
-  "Fullâ€‘Stack Developer",
+  "Full\u2011Stack Developer",
   "Web3 Builder",
   "Technical Writer",
 ];
@@ -91,7 +91,7 @@ export function Hero() {
           </motion.div>
 
           <motion.p variants={item} className="mt-6 max-w-xl text-[15px] leading-8 text-muted">
-            I'm Abass Ibrahim. I build sharp, reliable web experiences and support real-world
+            I&apos;m Abass Ibrahim. I build sharp, reliable web experiences and support real-world
             systems where uptime, clarity, and calm execution matter. Dark UI, clean code, and
             shipped outcomes.
           </motion.p>
@@ -134,7 +134,7 @@ export function Hero() {
               className="font-mono text-[12px] uppercase tracking-[0.22em] text-muted hover:text-accent"
               aria-label="Visit GitHub profile"
             >
-              GitHub â†—
+              GitHub &#8599;
             </Link>
             <Link
               href="https://www.linkedin.com/in/abass-ibrahim-devv"
@@ -143,7 +143,7 @@ export function Hero() {
               className="font-mono text-[12px] uppercase tracking-[0.22em] text-muted hover:text-accent"
               aria-label="Visit LinkedIn profile"
             >
-              LinkedIn â†—
+              LinkedIn &#8599;
             </Link>
           </motion.div>
         </motion.div>
@@ -172,7 +172,7 @@ export function Hero() {
                 { k: "3+ Years", v: "Experience" },
                 { k: "20+ Stack", v: "Tools & Tech" },
                 { k: "6+ Domains", v: "Roles" },
-                { k: "âˆž Drive", v: "Always Learning" },
+                { k: "\u221e Drive", v: "Always Learning" },
               ].map((s) => (
                 <div
                   key={s.k}
@@ -205,6 +205,3 @@ export function Hero() {
     </section>
   );
 }
-
-
-
