@@ -129,6 +129,26 @@ export const projects: Project[] = [
       { label: "Live Demo", href: "https://aureeo.netlify.app/" },
     ],
   },
+  {
+    number: "06",
+    title: "Atlas HR — Global HR, Compliance & Payroll Platform",
+    description:
+      "A full-stack HR SaaS for teams that hire across borders — Nigeria, India, the UK, and the US. Features an AI Compliance Sandbox that answers HR questions and builds ready workflows, an interactive cost & risk calculator per country, automated onboarding/termination flows, country-aware document generation, and a programmatic knowledge base with templates and guides.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "SaaS", "HR Tech", "AI"],
+    links: [
+      { label: "Live Demo", href: "https://atlas-hr-fq24.vercel.app/" },
+    ],
+  },
+  {
+    number: "07",
+    title: "AirtimeVault — Airtime-to-Cash Conversion Platform",
+    description:
+      "A Nigerian fintech platform that converts MTN, Airtel, Glo, and 9mobile airtime into wallet funds in under 30 minutes. Includes tiered conversion rates, bill payments, P2P transfers, a virtual Naira card, referral bonuses, KYC verification, and 24/7 automated fraud monitoring — all from a single secure wallet.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Fintech", "Nigeria", "Wallet"],
+    links: [
+      { label: "Live Demo", href: "https://airtime-vault-plhc.vercel.app/" },
+    ],
+  },
 ];
 
 export const writingPlatforms: WritingPlatform[] = [
